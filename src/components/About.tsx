@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { FiExternalLink, FiUser } from 'react-icons/fi';
-import { Suspense, lazy } from 'react';
 
 const ResumeIframe = () => {
   return (
@@ -39,9 +38,7 @@ const About = () => {
             className="relative"
           >
             <div className="aspect-square relative rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-              <Suspense fallback={<div className="w-full h-full flex items-center justify-center bg-gray-100">Carregando...</div>}>
-                <ResumeIframe />
-              </Suspense>
+              <ResumeIframe />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-500 rounded-full flex items-center justify-center text-white">
