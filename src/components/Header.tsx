@@ -2,12 +2,8 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useState } from 'react';
-import { FiMenu, FiX } from 'react-icons/fi';
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   const menuItems = [
     { href: '/', label: 'Início' },
     { href: '#sobre', label: 'Sobre' },
