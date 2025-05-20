@@ -17,7 +17,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed w-full z-50">
+    <header className="fixed w-full z-50 hidden md:block">
       <nav className="glass-effect">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -30,7 +30,7 @@ const Header = () => {
             </motion.div>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-8">
+            <div className="flex space-x-8">
               {menuItems.map((item) => (
                 <motion.div
                   key={item.href}
@@ -46,37 +46,7 @@ const Header = () => {
                 </motion.div>
               ))}
             </div>
-
-            {/* Mobile Menu Button */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="text-gray-300 hover:text-white"
-              >
-                {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-              </button>
-            </div>
           </div>
-
-          {/* Mobile Menu */}
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="md:hidden mt-4 space-y-4"
-            >
-              {menuItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="block text-gray-300 hover:text-white transition-colors py-2"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </motion.div>
-          )}
         </div>
       </nav>
     </header>

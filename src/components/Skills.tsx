@@ -44,22 +44,22 @@ const skills: Skill[] = [
 
 const Skills = () => {
   return (
-    <section className="py-20 bg-card" id="habilidades">
-      <div className="container mx-auto px-6">
+    <section className="py-16 sm:py-20 bg-card" id="habilidades">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 text-white">Minhas Habilidades</h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">Minhas Habilidades</h2>
+          <p className="text-gray-300 max-w-2xl mx-auto text-sm sm:text-base">
             Tecnologias e ferramentas que utilizo para criar soluções digitais modernas e eficientes.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto">
           {skills.map((skill, index) => (
             <motion.div
               key={skill.name}
@@ -71,17 +71,17 @@ const Skills = () => {
                 scale: 1.02,
                 transition: { duration: 0.2 }
               }}
-              className="glass-effect rounded-xl p-6 relative group cursor-pointer"
+              className="glass-effect rounded-xl p-4 sm:p-6 relative group cursor-pointer"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
-              <motion.div 
-                className="relative flex items-center mb-4"
+              <motion.div
+                className="relative flex items-center mb-3 sm:mb-4"
                 initial={{ x: 0 }}
                 whileHover={{ x: 10 }}
                 transition={{ duration: 0.2 }}
               >
-                <div className="relative w-12 h-12 mr-4 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="relative w-10 h-10 sm:w-12 sm:h-12 mr-3 sm:mr-4 transform group-hover:scale-110 transition-transform duration-300">
                   <Image
                     src={skill.icon}
                     alt={`${skill.name} icon`}
@@ -89,12 +89,12 @@ const Skills = () => {
                     className="object-contain drop-shadow-lg"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300">
+                <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300">
                   {skill.name}
                 </h3>
               </motion.div>
               
-              <p className="text-gray-300 group-hover:text-gray-100 transition-colors duration-300 relative z-10">
+              <p className="text-sm sm:text-base text-gray-300 group-hover:text-gray-100 transition-colors duration-300 relative z-10">
                 {skill.description}
               </p>
               

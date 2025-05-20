@@ -63,23 +63,23 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <section className="py-20 bg-card" id="projetos">
-      <div className="container mx-auto px-6">
+    <section className="py-16 sm:py-20 bg-card" id="projetos">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 text-white">Meus Projetos</h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">Meus Projetos</h2>
+          <p className="text-gray-300 max-w-2xl mx-auto text-sm sm:text-base">
             Aqui estão alguns dos projetos que desenvolvi. Cada um representa um desafio único
             e uma oportunidade de aprendizado.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -90,24 +90,25 @@ const Projects = () => {
               className="glass-effect rounded-xl overflow-hidden group flex flex-col h-full"
             >
               <div className="flex flex-col h-full">
-                <div className="relative h-44 w-full overflow-hidden flex items-center justify-center flex-shrink-0">
+                <div className="relative h-40 sm:h-44 w-full overflow-hidden flex items-center justify-center flex-shrink-0">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-contain p-6"
+                    className="object-contain p-4 sm:p-6"
                   />
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
-                  <div className="text-center mb-auto">
-                    <h3 className="text-xl font-bold mb-3 text-white group-hover:text-blue-400 transition-colors duration-300">
+                
+                <div className="p-4 sm:p-6 flex flex-col flex-grow">
+                  <div className="text-center mb-4">
+                    <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white group-hover:text-blue-400 transition-colors duration-300">
                       {project.title}
                     </h3>
-                    <p className="text-gray-300 mb-6 line-clamp-3">
+                    <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 line-clamp-3">
                       {project.description}
                     </p>
                   </div>
-                  <div className="flex items-center justify-center gap-6 mb-6">
+                  <div className="flex items-center justify-center gap-4 sm:gap-6 mb-4 sm:mb-6">
                     {project.technologies.map((tech) => {
                       const Icon = tech.icon;
                       return (
@@ -116,13 +117,14 @@ const Projects = () => {
                           whileHover={{ y: -3 }}
                           className="flex flex-col items-center"
                         >
-                          <Icon className={`text-2xl ${tech.color}`} />
+                          <Icon className={`text-xl sm:text-2xl ${tech.color}`} />
                           <span className="text-xs mt-1 text-gray-400">{tech.name}</span>
                         </motion.div>
                       );
                     })}
                   </div>
-                  <div className="flex items-center justify-center gap-6 mt-auto">
+                  
+                  <div className="flex items-center justify-center gap-4 sm:gap-6 mt-auto">
                     {project.githubUrl && (
                       <motion.a
                         href={project.githubUrl}
@@ -130,7 +132,7 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="flex items-center text-gray-300 hover:text-white transition-colors duration-300"
+                        className="flex items-center text-sm sm:text-base text-gray-300 hover:text-white transition-colors duration-300"
                       >
                         <FiGithub className="mr-2" />
                         Código
@@ -143,7 +145,7 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300"
+                        className="flex items-center text-sm sm:text-base text-blue-400 hover:text-blue-300 transition-colors duration-300"
                       >
                         <FiExternalLink className="mr-2" />
                         Demo
