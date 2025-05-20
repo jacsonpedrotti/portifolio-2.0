@@ -46,7 +46,7 @@ const Hero = () => {
                 <FiLinkedin size={24} />
               </motion.a>
               <motion.a
-                href="mailto:jacsonpedrotti@gmail.com"
+                href="mailto:pedrottijacson@gmail.com"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="p-3 bg-red-600 text-white rounded-full hover:bg-red-500 transition-all"
@@ -54,7 +54,7 @@ const Hero = () => {
                 <FiMail size={24} />
               </motion.a>
               <motion.a
-                href="https://wa.me/5554999999999"
+                href="https://wa.me/5548996832721"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
