@@ -1,22 +1,43 @@
-# Portfólio Pessoal
+# 🚀 Portfólio Pessoal - Jacson Pedrotti
 
-Este é um portfólio profissional desenvolvido com Next.js, TypeScript, Tailwind CSS e outras tecnologias modernas.
+Olá! Este é meu portfólio pessoal, onde compartilho minha jornada como desenvolvedor e apresento meus projetos. Desenvolvi este site com foco em performance, acessibilidade e uma experiência de usuário moderna e agradável.
 
-## 🚀 Tecnologias
+## ✨ Características
 
-- [Next.js 14](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [React Hook Form](https://react-hook-form.com/)
-- [EmailJS](https://www.emailjs.com/)
+- Design moderno e responsivo
+- Animações suaves com Framer Motion
+- Formulário de contato integrado com EmailJS
+- Tema escuro com gradientes e efeitos de vidro
+- SEO otimizado
+- Performance otimizada com Next.js 14
+- Totalmente tipado com TypeScript
 
-## 📦 Instalação
+## 🛠️ Tecnologias Utilizadas
+
+### Frontend
+- [Next.js 14](https://nextjs.org/) - Framework React com renderização híbrida
+- [TypeScript](https://www.typescriptlang.org/) - Superset JavaScript com tipagem estática
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitário
+- [Framer Motion](https://www.framer.com/motion/) - Biblioteca de animações
+- [React Hook Form](https://react-hook-form.com/) - Gerenciamento de formulários
+- [React Icons](https://react-icons.github.io/react-icons/) - Ícones modernos
+- [Yup](https://github.com/jquense/yup) - Validação de formulários
+
+### Backend & Integrações
+- [EmailJS](https://www.emailjs.com/) - Serviço de envio de emails
+- [Node.js](https://nodejs.org/) - Ambiente de execução JavaScript
+
+### Ferramentas de Desenvolvimento
+- [ESLint](https://eslint.org/) - Linting de código
+- [PostCSS](https://postcss.org/) - Processamento de CSS
+- [Autoprefixer](https://github.com/postcss/autoprefixer) - Adição automática de prefixos CSS
+
+## 🚀 Como Executar
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/seu-portfolio.git
-cd seu-portfolio
+git clone https://github.com/seu-usuario/portfolio-2.0.git
+cd portfolio-2.0
 ```
 
 2. Instale as dependências:
@@ -39,28 +60,29 @@ npm run dev
 
 O site estará disponível em `http://localhost:3000`.
 
-## 🔧 Configuração
+## 📱 Projetos em Destaque
 
-### EmailJS
+- **ACJ Lajes Treliçadas** - Site institucional moderno que criei para a empresa do meu pai.
+- **R.V.N Entulhos** - Site institucional com galeria e formulário de contato, que fiz como meu primeiro trabalho freelancer.
+- **Map, Reduce e Filter** - Aplicação para prática de conceitos JavaScript.
 
-1. Crie uma conta no [EmailJS](https://www.emailjs.com/)
-2. Crie um novo serviço de email
-3. Crie um template de email
-4. Copie as credenciais para o arquivo `.env.local`
+## 🎨 Design
 
-### Personalização
+O design do portfólio foi pensado para ser moderno e minimalista, utilizando:
+- Tema escuro com gradientes suaves
+- Efeitos de vidro (glassmorphism)
+- Animações fluidas e interativas
+- Layout responsivo para todos os dispositivos
+- Tipografia clara e legível
+- Cores contrastantes para melhor acessibilidade
 
-1. Substitua as imagens em `public/` com suas próprias imagens
-2. Atualize as informações pessoais em:
-   - `src/components/Hero.tsx`
-   - `src/components/Projects.tsx`
-   - `src/components/Contact.tsx`
-   - `src/app/layout.tsx`
+## 📫 Contato
 
-## 📝 Licença
+- Email: [pedrottijacson@gmail.com]
+- LinkedIn: [https://www.linkedin.com/in/jacsonpedrotti/]
+- GitHub: [https://portifolio-2-0-virid.vercel.app/]
+- WhatsApp: [https://api.whatsapp.com/send/?phone=5548996832721]
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 🤝 Contribuições
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
